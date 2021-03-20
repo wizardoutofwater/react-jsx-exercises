@@ -1,16 +1,22 @@
 let Header = () => {
-    return <span>Design a header for your blog</span>
+    return <div>Design a header for your blog</div>
 }
 let Article = () => {
-    return <span>Write and design your blog article</span>
+    return <div>Write and design your blog article</div>
 }
 let Footer = () => {
-    return <span>Design a footer for your blog</span>
+    return <div>Design a footer for your blog</div>
 }
 
 let Blog = () => {
-    return <span>Make this Component render the header, article, and footer</span>
+    return (<span>
+       <Header />
+       <Article />
+       <Footer />
+       </span>)
 }
 
 
 ReactDOM.render(<Blog />, document.getElementById('root'))
+
+
